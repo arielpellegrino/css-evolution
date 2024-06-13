@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        #pre-definidos{
+            color: red;
+        }
+
+        #current-color{
+            /*background-color: transparent;*/
+            color: rgb(72, 255, 0);
+            border: 2px solid currentColor
+        }
+
+        #rgb{
+            color:rgb(79, 62, 238)
+        }
+        #rgba{
+            color:rgba(238, 127, 62, 0.897);
+        }
+
+        #hsl{
+            color: hsla(0, 66%, 51%, 0.534);
+        }
+
+    </style>
+    <title>{{ colors }}</title>
+</head>
+
+<body>
+    <h1>
+        Cores
+    </h1>
+    <ul>
+        <li id="pre-definidos">Cores</li>
+        <li id="current-color">Palavra chave "current-color"</li>
+        <li id="hex">hexadecimal</li>
+        <li id="hex-transparencia">hexadecimal com transparencia</li>
+        <li id="rgb">rgb</li>
+        <li id="rgba">rgba</li>
+        <li id="hsl">hsl</li>
+        <li id="hsla">hsla</li>
+    </ul>
+
+
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        div {
+            width: 200px;
+            height: 300px;
+            border: 5px solid blue;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        #contain{
+            object-fit: contain;
+        }
+
+        #cover{
+            object-fit: cover;
+        }
+
+        #none{
+            object-fit: none;
+        }
+
+        #scaleDown{
+            object-fit: scale-down;
+        }
+
+
+
+    </style>
+    <title>{{ NAME }}</title>
+</head>
+
+<body>
+    <h1> Propriedade<code> Object-fit</code></h1>
+    <code>Object-fit: fill; padrão</code>
+    <div>
+        <img src="https://avatars.githubusercontent.com/u/4975968?s=280&v=4" alt="" id="fill">
+    </div>
+
+    <code>Object-fit: fill; contains</code>
+    <div>
+        <img id="contain" src="https://avatars.githubusercontent.com/u/4975968?s=280&v=4" alt="" id="fill">
+    </div>
+
+    <code>Object-fit: fill; cover</code>
+    <div>
+        <img id="cover" src="https://avatars.githubusercontent.com/u/4975968?s=280&v=4" alt="" id="fill">
+    </div>
+
+    <code>Object-fit: fill; none</code>
+    <div>
+        <img id="none" src="https://avatars.githubusercontent.com/u/4975968?s=280&v=4" alt="" id="fill">
+    </div>
+
+    <code>Object-fit: fill; scaleDown</code>
+    <div>
+        <img id="scaleDown" src="https://avatars.githubusercontent.com/u/4975968?s=280&v=4" alt="" id="fill">
+    </div>
+
+</body>
+
+</html>
