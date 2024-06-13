@@ -5,33 +5,63 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
+
+        /* Correspondencia exata */
         [title="Netflix"] {
             color: red;
         }
+
+        [title="spotfy"] {
+            color: green;
+        }
+
+        /* Correspondencia por assimilição */
+        [title~="stream"]{
+            background-color:red;
+        }
+
+        [title~="hbo"]{
+            background-color:pink;
+        }
+
+        /* Correspondencia por hifen */
+        [title|="hbo"]{
+            background-color:blue;
+        }
+
+        /* Correspondencia prefixos e sufixos */
+        [href^="http://"]{
+            background-color:#43f1d0;
+        }
+
+        [href$="login"]{
+            background-color: #dea77d;
+        }
+
     </style>
     <title>ATT</title>
 </head>
 
 <body>
     <ul>
-        <li><a title="Netflix" href="https://Netflix.com">Netflix</a></li>
+        <li><a title="stream Netflix" href="https://Netflix.com">Netflix</a></li>
         <li><a title="prime" href="https://prime.com">Prime</a></li>
-        <li><a title="spotfy" href="https://spotfy.com">Spotfy</a></li>
-        <li><a title="hbo" href="https://hbo.com">Hbo</a></li>
+        <li><a title="ouvir spotfy" href="https://spotfy.com">Spotfy</a></li>
+        <li><a title="ver-hbo" href="https://hbo.com">Hbo</a></li>
     </ul>
 
     <ul>
         <li><a title="Netflix" href="https://Netflix.com">Netflix</a></li>
         <li><a title="prime" href="https://prime.com">Prime</a></li>
         <li><a title="spotfy" href="https://spotfy.com">Spotfy</a></li>
-        <li><a title="hbo" href="https://hbo.com">Hbo</a></li>
+        <li><a title="batata hbo" href="https://hbo.com">Hbo</a></li>
     </ul>
 
     <ul>
-        <li><a title="Netflix" href="https://Netflix.com">Netflix</a></li>
-        <li><a title="prime" href="https://prime.com">Prime</a></li>
-        <li><a title="spotfy" href="https://spotfy.com">Spotfy</a></li>
-        <li><a title="hbo" href="https://hbo.com">Hbo</a></li>
+        <li><a title="Netflix" href="http://Netflix.com">Netflix</a></li>
+        <li><a title="prime" href="https://prime.com/login">Prime</a></li>
+        <li><a title="spotfy" href="http://spotfy.com">Spotfy</a></li>
+        <li><a title="hbo" href="http://hbo.com">Hbo</a></li>
     </ul>
 
 
